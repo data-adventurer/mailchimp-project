@@ -1,3 +1,7 @@
+# Extras
+.env
+data/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -212,3 +216,4 @@ target/
 dbt_packages/
 logs/
 # end dbt Cloud content
+dbt_internal_packages/
