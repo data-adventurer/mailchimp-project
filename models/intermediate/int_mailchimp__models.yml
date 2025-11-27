@@ -1,0 +1,149 @@
+version: 2
+
+models:
+  - name: int_mailchimp__campaign_tracking
+    description: ""
+    columns:
+      - name: campaign_id
+        data_type: varchar
+        description: ""
+
+      - name: opens
+        data_type: boolean
+        description: ""
+
+      - name: html_clicks
+        data_type: boolean
+        description: ""
+
+      - name: text_clicks
+        data_type: boolean
+        description: ""
+
+      - name: goal_tracking
+        data_type: boolean
+        description: ""
+
+      - name: google_analytics
+        data_type: varchar
+        description: ""
+
+      - name: clicktale
+        data_type: varchar
+        description: ""
+
+  - name: int_mailchimp__campaign_settings
+    description: ""
+    columns:
+      - name: campaign_id
+        data_type: varchar
+        description: ""
+
+      - name: subject_line
+        data_type: varchar
+        description: ""
+
+      - name: title
+        data_type: varchar
+        description: ""
+
+      - name: from_name
+        data_type: varchar
+        description: ""
+
+      - name: reply_to
+        data_type: varchar
+        description: ""
+
+      - name: use_conversation
+        data_type: boolean
+        description: ""
+
+      - name: to_name
+        data_type: varchar
+        description: ""
+
+      - name: folder_id
+        data_type: varchar
+        description: ""
+
+      - name: authenticate
+        data_type: boolean
+        description: ""
+
+  - name: int_mailchimp__campaign_report_summary
+    description: ""
+    columns:
+      - name: campaign_id
+        data_type: varchar
+        description: ""
+
+      - name: opens
+        data_type: number
+        description: ""
+
+      - name: unique_opens
+        data_type: number
+        description: ""
+
+      - name: open_rate
+        data_type: float
+        description: ""
+
+      - name: clicks
+        data_type: number
+        description: ""
+
+      - name: subscriber_clicks
+        data_type: number
+        description: ""
+
+      - name: click_rate
+        data_type: float
+        description: ""
+
+  - name: int_mailchimp__campaign_recipients
+    description: ""
+    columns:
+      - name: campaign_id
+        data_type: varchar
+        description: ""
+
+      - name: list_id
+        data_type: varchar
+        description: ""
+
+      - name: segment_text
+        data_type: varchar
+        description: ""
+
+      - name: recipient_count
+        data_type: number
+        description: ""
+
+  - name: int_mailchimp__campaign_delivery_status
+    description: ""
+    columns:
+      - name: campaign_id
+        data_type: varchar
+        description: ""
+
+      - name: enabled
+        data_type: boolean
+        description: ""
+
+      - name: can_cancel
+        data_type: boolean
+        description: ""
+
+      - name: status
+        data_type: varchar
+        description: ""
+
+      - name: emails_sent
+        data_type: number
+        description: ""
+
+      - name: emails_canceled
+        data_type: number
+        description: ""
