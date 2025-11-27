@@ -8,6 +8,7 @@ from datetime import datetime, timedelta
 
 # Set up extract time and logging (outside functions)
 extract_time = datetime.now().strftime('%Y-%m-%d %H-%M')
+extract_stamp = datetime.now().strftime('%Y-%m-%d')
 
 log_dir = "extract/logs"
 os.makedirs(log_dir, exist_ok=True)
@@ -36,8 +37,8 @@ if __name__ == '__main__':
     campaigns = fetch_all_campaigns(mailchimp, start_date, end_date)
     logging.info(f"Fetched {len(campaigns)} campaigns")
     
-    save_campaigns(campaigns, base_path, extract_time)
+    save_campaigns(campaigns, base_path, extract_stamp)
     logging.info("Campaign data extraction finished successfully")
 
-    upload_json_files_to_s3(base_path)  # Call upload function here
+    upload_json_files_to_s3(base_path)
     logging.info("Upload to S3 completed successfully")
