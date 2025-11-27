@@ -1,0 +1,2 @@
+select *
+from til_data_engineering.lorrainef_staging.mailchimp_bronze
