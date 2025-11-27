@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: mailchimp_raw
+    database: mailchimp_data
+    schema: raw
+    tables:
+      - name: mailchimp_bronze
+        description: ""
+        columns:
+          - name: json_data
+            description: ""
+          - name: extract_date
+            description: ""
+          - name: file_name
+            description: ""
