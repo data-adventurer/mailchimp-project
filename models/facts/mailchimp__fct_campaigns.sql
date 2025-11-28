@@ -3,7 +3,7 @@ with stg_mailchimp__campaigns as (
     select * from {{ ref('stg_mailchimp__campaigns') }}
   
 ),
-int_mailchimp__campaign_report_summary as (
+mailchimp__fct_campaigns as (
     
     select
 
@@ -18,4 +18,4 @@ int_mailchimp__campaign_report_summary as (
     from stg_mailchimp__campaigns
 )
 
-select * from int_mailchimp__campaign_report_summary
+select * from int_mailchimp__fct_campaigns

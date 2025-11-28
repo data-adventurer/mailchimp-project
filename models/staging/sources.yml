@@ -14,3 +14,12 @@ sources:
             description: ""
           - name: file_name
             description: ""
+      - name: mailchimp_bronze_email_activity
+        description: ""
+        columns:
+          - name: json_data
+            description: ""
+          - name: extract_date
+            description: ""
+          - name: file_name
+            description: ""
