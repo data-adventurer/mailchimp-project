@@ -5,3 +5,4 @@
         ,settings:subject_line::string as subject_line
         
     from {{ ref('stg_mailchimp__campaigns') }}
+    where year(create_time) = 2025
