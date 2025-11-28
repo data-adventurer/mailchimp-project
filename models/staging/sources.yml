@@ -5,7 +5,7 @@ sources:
     database: mailchimp_data
     schema: raw
     tables:
-      - name: mailchimp_bronze
+      - name: mailchimp_bronze_campaigns
         description: ""
         columns:
           - name: json_data
